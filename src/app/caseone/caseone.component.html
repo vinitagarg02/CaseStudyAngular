@@ -1,0 +1,38 @@
+
+<div class="card-body" >
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<h2 class="navbar-brand">Real Estate Property Management</h2>
+    </nav>
+<form (ngSubmit)="postData()">
+    <div class="form-group"  >
+        
+        <input type="file" class="form-control" (change)="onFileChangeNew($event)" placeholder="Upload file" accept=".xlsx">  
+        <button class="form-group" style="width:40%">Upload</button> 
+    </div>
+
+<div >
+ 
+</div>
+    
+</form>
+
+<br><br>
+
+
+  <table class="table table-bordered table-striped">
+    <thead class="thead-dark">
+        
+          <th scope="col" *ngFor="let cols of columnData">{{cols.Text}}</th>
+         
+        
+      </thead>
+      <tbody>
+  <tr *ngFor="let pro of property ">
+    <td scope="col" *ngFor="let cols of columnData">
+        {{ pro[cols.Value]}}</td>
+    
+</tr>
+
+</tbody>
+</table>
+</div>

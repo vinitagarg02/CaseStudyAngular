@@ -1,0 +1,7 @@
+.center {
+    margin: auto;
+    width: 50%;
+    border: 3px solid rgb(20, 20, 20);
+    padding: 10px;
+    margin-bottom: 30px;
+  }
